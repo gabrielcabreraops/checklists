@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Air Return Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .clear-button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function clearAll() {
+            document.querySelectorAll('input[type=checkbox]').forEach(checkbox => checkbox.checked = false);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Air Return Checklist</h2>
+        <div class="checklist-item"><input type="checkbox"> Gather Information / Air Return Reason.</div>
+        <div class="checklist-item"><input type="checkbox"> Advise The AOC and allocate gate.</div>
+        <div class="checklist-item"><input type="checkbox"> Advise SOC, Allocators and all pertinent departments. Example: MX/ Airfield OPS/ AGR.</div>
+        <div class="checklist-item"><input type="checkbox"> Send Air return ORN e-mail.</div>
+        <div class="checklist-item"><input type="checkbox"> Ask FD Crew if an emergency was declared and advise the SOC.</div>
+        <div class="checklist-item"><input type="checkbox"> Advise AO to provide the option to deplane and notify SOC with the time it was done.</div>
+        <div class="checklist-item"><input type="checkbox"> Obtain information about the issue from pertinent department and update the SOC with the information.</div>
+        <div class="checklist-item"><input type="checkbox"> If the aircraft goes OOS, Collect FOB and send FOB e-mail.</div>
+        <div class="checklist-item"><input type="checkbox"> After Departure Close ORN e-Mail.</div>
+        <button class="clear-button" onclick="clearAll()">Clear All</button>
+    </div>
+</body>
+
+</html>
